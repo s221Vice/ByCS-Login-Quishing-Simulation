@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const downloadBtn = document.getElementById("force-download-btn"); // Der Button im Fenster
     
     // Name deines PDFs (muss im selben Hauptordner auf GitHub liegen!)
-    const pdfFileName = "quishing-arbeitsblatt.pdf"; 
+    const pdfFileName = "Stationen-AB_Phishing_und_Social_Engineering.pdf"; 
 
     // 2. Klick auf den Login-Button abfangen
     if (loginButton) {
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (downloadBtn) {
         downloadBtn.addEventListener("click", () => {
             console.log("Download wird gestartet...");
-            forceDownload(pdfFileName, "Arbeitsblatt_Quishing.pdf");
+            forceDownload(pdfFileName, "Stationen-AB_Phishing_und_Social_Engineering.pdf");
         });
     }
 });
@@ -60,3 +60,4 @@ function forceDownload(url, filename) {
             alert("Das Arbeitsblatt konnte nicht geladen werden. Prüfe, ob die PDF-Datei richtig im GitHub-Ordner liegt.");
         });
 }
+
