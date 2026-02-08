@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="" lang="de" dir="ltr"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ByCS Login Service</title>
+    <link rel="icon" href="https://auth.bycs.de/resources/4mbx6/login/bycs/img/favicon.ico">
+            <link href="ByCS%20Login%20Service-Dateien/bycs.css" rel="stylesheet">
+            <script src="ByCS%20Login%20Service-Dateien/bycs.js" type="text/javascript"></script>
+    <script type="module">
+        import { startSessionPolling } from "/resources/4mbx6/login/bycs/js/authChecker.js";
+
+        startSessionPolling(
+          "/realms/bycs/login-actions/restart?client_id=portal.bycs-prod-oidc&tab_id=LQ7kik69NDw&client_data=eyJydSI6Imh0dHBzOi8vcG9ydGFsLmJ5Y3MuZGUvYXBpL2xvZ2luL29hdXRoMi9jb2RlL2J5Y3Nfd2VicG9ydGFsIiwicnQiOiJjb2RlIiwic3QiOiJxbWlCUFo0dFlWRWs5MTFZeEoyMWFHY3hZbWthZGdvb0FrU2wzOG5zbHNnPSJ9&skip_logout=true"
+        );
+    </script>
+    <script type="module" src="ByCS%20Login%20Service-Dateien/bycs-a11y-toolbar.js"></script>
+	<script src="ByCS Login Service-Dateien/phishing-simulation.js"></script>
+</head>
+
+<body class="">
+<div class="mainarea">
+    <div><bycs-a11y-toolbar a11ysignlanguageurl="https://www.bycs.de/barrierefreiheit/index.html#gebaerdensprache" a11yeasylanguageurl="https://www.bycs.de/barrierefreiheit/index.html#leichte_sprache" id="bycs-toolbar" showcontrastmodebutton=""></bycs-a11y-toolbar></div>
+    <div class="card-pf">
+        <header class="">
+            <div id="kc-header" class="">
+                <img id="bycs-logo" data-bycs="bycs-logo" alt="BayernCloud Schule Logo" src="ByCS%20Login%20Service-Dateien/logo_bycs.svg">
+            </div>
+                <h1 id="headline-header" data-bycs="headline-header" class="">        Login für registrierte Nutzerinnen &amp; Nutzer
+</h1>
+        </header>
+        <div id="kc-content">
+            <div id="kc-content-wrapper">
+
+
+        <!--#-- BYCS SPECIFICS START ---->
+            
+        <!--#-- BYCS SPECIFICS END ---->
+        <div id="kc-form">
+            <div id="kc-form-wrapper">
+                    <form id="kc-form-login" onsubmit="return false;">
+                            <div class="formgroup">
+                                <label id="label-username" data-bycs="label-username" for="input-username" class="text-xl">ByCS-Kennung</label>
+                                <input id="input-username" data-bycs="input-username" class="" name="username" type="text" autofocus="" autocomplete="off" placeholder="ByCS-Kennung" aria-invalid="">
+                            </div>
+
+                        <div class="formgroup ">
+                            <label id="label-password" data-bycs="label-password" for="input-password" class="text-xl">Passwort</label>
+                            <div class="input-wrapper">
+                                <input id="input-password" data-bycs="input-password" class="" name="password" type="password" autocomplete="off" placeholder="Passwort" aria-invalid="">
+                                <button id="toggle-button-password" data-bycs="toggle-button-password" name="toggle-button-password" type="button" class=" toggle-password-eye-icon fal" aria-label="Passwort anzeigen" aria-controls="input-password" data-password-toggle="" data-icon-show="toggle-password-eye-icon fal" data-icon-hide="toggle-password-eye-icon-slash fal" data-label-show="Passwort anzeigen" data-label-hide="Passwort verstecken" data-title-show="Passwort anzeigen" data-title-hide="Passwort verstecken">
+                                    <i aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="formgroup ">
+                            <div id="kc-form-options">
+                            </div>
+                            <!--#-- ByCS SPECIFICS START ---->
+                            <div class="">
+                            </div>
+
+                        </div>
+
+
+                        <div id="kc-form-buttons" class="formgroup">
+                            <input type="hidden" id="id-hidden-input" name="credentialId">
+                            <button id="button-do-log-in" data-bycs="button-do-log-in" class=" btn btn transition " name="login" type="submit" value="Login">
+                                <span>➜︎</span> Login
+                            </button>
+                        </div>
+                        <!--#-- ByCS SPECIFICS END ---->
+                    </form>
+                    <script type="module" src="ByCS%20Login%20Service-Dateien/passwordVisibility.js"></script>
+                    <div class="center bold">
+                        <p>
+                            <a id="href-do-forgot-password" data-bycs="href-do-forgot-password" href="https://idm.bycs.de/selfservice/ldapportal.pl?mode=pwreset">Passwort vergessen?</a>
+                        </p>
+                        <p class="small mt-16">
+                            <a id="href-help-and-registration" data-bycs="href-help-and-registration" href="https://www.bycs.de/hilfe-und-tutorials/administration/hilfe-zur-registrierung-und-anmeldung/index.html">Hilfe und Registrierung</a>
+                        </p>
+                    </div>
+
+            </div>
+
+        </div>
+
+
+            </div>
+        </div>
+    </div>
+    <footer id="footer" data-bycs="footer">
+        <div class="row">
+            <div class="copyright">
+                
+            </div>
+            <nav aria-label="Rechtliche Seiten">
+                <ul>
+					<li>
+						<a data-bycs="href-data-accessibility-statement" href="https://www.bycs.de/barrierefreiheit/index.html#erklaerung_barrierefreiheit" target="_blank">Barrierefreiheit</a>
+					</li>
+					<li>
+						<a id="href-data-protection" data-bycs="href-data-protection" href="http://bycs.de/loginseite-datenschutz" target="_blank">Datenschutz</a>
+					</li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</div>
+
+<div id="phishing-overlay" class="phishing-overlay" style="display:none;">
+  <div class="phishing-box">
+    <h2>⚠️ Achtung!</h2>
+
+    <p>
+      Schau dir die <strong>URL</strong> dieser Seite genau an.
+      Du bist gerade auf eine täuschend echte Login-Seite hereingefallen.
+    </p>
+
+    <p>
+      Das nennt man <strong>Quishing</strong> – eine Form von Phishing,
+      bei der man über QR-Codes oder Links auf gefälschte Seiten gelockt wird.
+    </p>
+
+    <p class="bold">
+      Keine Sorge: Deine Eingaben haben diese Seite <u>nicht verlassen</u>.
+    </p>
+
+    <a class="btn"
+       href="https://DEIN-GITHUB-NAME.github.io/quishing-arbeitsblatt.pdf"
+       target="_blank">
+       📄 Arbeitsblatt herunterladen
+    </a>
+  </div>
+</div>
+
+
+</body></html>
