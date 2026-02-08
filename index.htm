@@ -136,8 +136,25 @@
   </div>
 </div>
 
+<!-- Dieser Block ist das versteckte Hinweisfenster -->
+<div id="phishing-overlay" style="display:none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); display: none; align-items: center; justify-content: center; z-index: 10000; padding: 20px;">
+    <div style="background: white; padding: 30px; border-radius: 10px; max-width: 500px; text-align: center; font-family: sans-serif; box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+        <h2 style="color: #e00; margin-top: 0;">⚠️ Achtung: Quishing-Simulation!</h2>
+        
+        <p>Schau dir die <strong>URL im Browser</strong> genau an. Sieht sie wie die echte Adresse der ByCS aus?</p>
+        
+        <p>Du bist gerade auf eine gefälschte Seite hereingefallen. Das nennt man <strong>Quishing</strong> (Phishing per QR-Code). In dieser Station lernst du, wie du dich schützt.</p>
+        
+        <p style="background: #f0f0f0; padding: 10px; border-radius: 5px;">Keine Sorge: Deine eingegebenen Daten wurden <strong>nicht</strong> gespeichert oder gesendet.</p>
 
+        <!-- Das ist der Button für den Download -->
+        <button id="force-download-btn" class="btn" style="background-color: #24292e; color: white; padding: 15px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; width: 100%; margin-top: 20px;">
+            📄 Arbeitsblatt herunterladen
+        </button>
+    </div>
+</div>
 
 </body></html>
+
 
 
